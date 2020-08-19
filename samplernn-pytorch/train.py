@@ -43,8 +43,8 @@ default_params = {
 
     # training parameters
     'keep_old_checkpoints': True,
-    'datasets_path': '/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/environment_audio',
-    'results_path': '/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/samplernn/results',
+    'datasets_path': 'path of your dataset',
+    'results_path': 'path of dir to store the result',
     'epoch_limit': 1000,
     'resume': True,
     'sample_rate': 16000,
@@ -52,9 +52,9 @@ default_params = {
     'sample_length': 160000,
     'loss_smoothing': 0.99,
     'cuda': True,
-    'comet_key': "yLGyzdiBY8HKKFZzsvOIB0KVA",
-    'project_name': "final-samplernn",
-    'workspace': "xytss123"
+    'comet_key': "parameter for comet plugin",
+    'project_name': "parameter for comet plugin",
+    'workspace': "parameter for comet plugin"
 }
 
 tag_params = [
