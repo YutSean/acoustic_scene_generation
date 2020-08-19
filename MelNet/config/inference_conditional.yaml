@@ -1,0 +1,5 @@
+tier: 1
+checkpoints: [
+  '/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/ma_xiaoyg-master/MelNet/chkpt/conditional/conditional_1aabae3_tier1_022.pt',
+]
+conditional: False

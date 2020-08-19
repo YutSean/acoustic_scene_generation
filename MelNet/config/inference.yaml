@@ -1,0 +1,5 @@
+tier: 1
+checkpoints: [
+  '/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/ma_xiaoyg-master/MelNet/chkpt/ariport/ariport_1aabae3_tier1_024.pt',
+]
+conditional: False
