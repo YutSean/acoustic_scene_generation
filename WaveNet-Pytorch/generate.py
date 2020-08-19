@@ -18,7 +18,7 @@ mp.set_start_method("spawn", force=True)
 
 def set_args():
     parser = ArgumentParser(description='Wavenet demo')
-    parser.add_argument('--data', type=str, default='/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/environment_audio/airport', help='folder to training set of .wav files')
+    parser.add_argument('--data', type=str, default='', help='folder to training set of .wav files')
     parser.add_argument('--x_len', type=int, default=2**14, help='length of input')
     parser.add_argument('--num_classes', type=int, default=256, help='number of discrete output levels')
     parser.add_argument('--num_layers', type=int, default=13, help='number of convolutional layers per block')
@@ -32,12 +32,12 @@ def set_args():
     parser.add_argument('--num_workers', type=int, default=5, help='number of workers')
     parser.add_argument('--num_epochs', type=int, default=100, help='number of training epochs')
     parser.add_argument('--disp_interval', type=int, default=1, help='number of epochs in between display messages')
-    parser.add_argument('--model_file', type=str, default='/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/wavenet_models_airport/lr=0.0001/', help='filename of model')
+    parser.add_argument('--model_file', type=str, default='', help='filename of model')
     parser.add_argument('--visdom', type=bool, default=False, help='flag to track variables in visdom')
     parser.add_argument('--new_seq_len', type=int, default=10, help='length of sequence to predict')
     parser.add_argument('--device', type=str, default='default', help='device to use')
     parser.add_argument('--resume_train', type=bool, default=False, help='whether to resume training existing models')
-    parser.add_argument('--root_dir', type=str, default='/mnt/IDMT-WORKSPACE/DATA-STORE/xiaoyg/wavenets/test_wavenet')
+    parser.add_argument('--root_dir', type=str, default='your root dir in the training phase.')
 
     args = parser.parse_args()
     return args
